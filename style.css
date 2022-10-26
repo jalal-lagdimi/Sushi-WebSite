@@ -310,6 +310,7 @@ tr td:first-child{
 
 .all-menu{
     display: flex;
+    flex-wrap: wrap;
 }
 .Menu{
     width: 100%;
