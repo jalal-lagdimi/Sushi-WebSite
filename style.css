@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+.logo img{
+    height: 80px;
+    width:87px;
+}
+
+html,body{
+    overflow-x: hidden;
+    
+}
+.background{
+    height: 100vh;
+    background-image: url("/img/BG.jpg");
+    background-size: cover;
+}
+header{
+    position:fixed ;
+    width: 100%;
+    height: 68px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    padding: 30px ;      
+}
+header a{
+    color: black;
+}
+
+header a {
+    display: inline;
+    width: 100px;
+    text-decoration: none;
+
+}
+.navbar ul{
+    float: right;
+    width: 600px;
+    display:flex;
+    justify-content: space-between;
+    margin-left: 450px;
+    font-size: 14px;
+    color: black;
+
+}
+.navbar ul li{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.home .home-text{
+    width: 50%;
+    padding-top: 200px;
+    margin-left: 50px; 
+}
+.home-text h1{
+    font-size: 75px;
+    color: #343A40;
+}
+.home-text p{
+    font-size: 23px;
+    margin-left: 5px;
+    padding-top: 5px;
+    color: #000000;
+}
+
+.home-text button {
+    width: 171px;
+    height: 46px;
+    margin-top: 20px;
+    background-color: #EEFF83;
+    border: none;
+    border-radius: 10px;
+    
+}
+.home-text button p{
+   font-size: 15px;
+   text-align: center;
+   margin-top: -1px;
+}
+
+
+.container-menu{
+    display: flex;
+    margin-top: 223px;
+}
+.container-text{
+    width: 40%;
+    margin-top: 53px;
+    text-align: center;
+} 
+.container-img{
+    width: 60%;
+} 
+.container-img img{
+    border-radius: 10px;
+    margin-left: 50px;  
+}
+.container-text h2{
+    font-size: 45px;
+}
+.container-text p{
+    font-size: 14px;
+    margin-top: 32px;
+}
+.container-text button{
+    width: 171px;
+    height: 46px;
+    margin-top: 32px;
+    border-radius: 10px;
+    border: none;
+    background-color: #AADCE6;
+}
+.container-text button p{
+    margin-top: -4px;
+    font-size: 15px;
+}
+
+
+
+
+.footer .content-footer {
+    display: flex;
+    justify-content: space-around;
+}
+.footer .tittle-footer{
+    text-align: center;
+}
+.footer{
+    height: 70vh;
+    margin-top: 187px;
+    padding-top: 50px;
+    background-color: #92DBAD;
+}
+.footer .tittle-footer {
+    font-size: 30px;
+    color: #0E5B70;
+    text-align: center;
+}
+.content-footer{
+    margin-top: 45px;
+}
+.content-footer h3{
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.content-footer p{
+    color: #0E5B70;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+.content-footer button{
+    width: 140px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 25px;
+    border:none;
+    border-radius: 17px;
+    background-color: #0E5B70;
+    color: #F9F8F8;
+}
+.content-footer a{
+    color: #F9F8F8;
+}
+.container-text a{
+    color: #000000;
+}
+.icons{
+    text-align: center;
+    margin-top: 40px;
+    color: #0E5B70;
+    letter-spacing: 5px;
+    margin-left: 10px;
+}
+.copyright{
+    text-align: center;
+    margin-top: 50px;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.about{
+    margin-top: 200px;
+}
+.about-title{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+.about-left{
+    width: 50%; 
+}
+.about-right{
+    width: 50px;
+}
+.about-content{
+    display: flex;
+    text-align: center;
+    margin-top: 90px;
+}
+.about-content h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about-content p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+
+
+ .contact-tittle{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-size: 30px;
+ }
+ .form-container{
+    width: 80%;
+    margin-left: 100px; 
+    background-color: #EFEFEF;
+    padding: 50px;
+    margin-left: 140px;
+    
+}
+ .input-row{
+    display: flex;
+    justify-content: space-between;
+	margin-bottom: 40px;
+ }
+label{
+    display: block;
+    color: #16b151;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.input-row .input-group{
+	flex-basis: 50%;
+}
+textarea{
+    display: block;
+    margin-bottom: 20px;
+    outline: none;
+    background-color: #EFEFEF;
+    border: 1px solid #aaa8a8;
+    resize: none;
+}
+.input{
+   margin-left:70px;
+}
+.input input{
+    width: 250px;
+    border: none;
+	outline: none;
+	border-bottom: 1px solid #aaa8a8;
+	padding-bottom: 5px;
+    background-color: #EFEFEF;
+}
+.input button{
+   width: 110px;
+   height: 30px;
+   border-radius: 10px;
+   border: none;
+   background-color: #37B165;
+   font-weight: bolder;
+   color: #F9F8F8;
+}
+
+.information{
+    width: 80%;
+    background-color: #37B165;
+    margin-left: 140px;
+    height: 150px;
+    padding-top: 40px;
+    padding-left: 120px;
+    color: #ffffff;
+}
+tr td:first-child{
+	padding-right: 90px;
+    font-weight: bolder;
+    padding-bottom: 5px;
+}
+
+
+
+
+.all-menu{
+    display: flex;
+}
+.Menu{
+    width: 100%;
+    margin-top: 190px;
+}
+.Menu h2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+.Menu .menu-select {
+    text-align: center;
+    justify-content: space-around;
+}
+.Menu .menu-select button{
+    width: 15%;
+    margin-bottom: 120px;
+    margin-right: 60px;
+    margin-left: 60px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #92DBAD;
+    color: black;
+    font-weight: bold;
+}
+.all-menu{
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.men-content h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.men-content button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border : 10px;
+    background-color: #92DBAD;
+    font-size: 10px;
+}
