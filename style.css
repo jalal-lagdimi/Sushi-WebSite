@@ -21,38 +21,49 @@ html,body{
     background-image: url("/img/BG.jpg");
     background-size: cover;
 }
-header{
-    position:fixed ;
-    width: 100%;
-    height: 68px;
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    align-items: center;
-    padding: 30px ;      
-}
-header a{
-    color: black;
-}
 
+
+header{
+    position: fixed;
+    float: right;
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+ }
+
+
+ header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+ }
+
+ header ul li a{
+    padding: 60px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+ }
 header a {
     display: inline;
     width: 100px;
     text-decoration: none;
-
-}
-.navbar ul{
-    float: right;
-    width: 600px;
-    display:flex;
-    justify-content: space-between;
-    margin-left: 450px;
-    font-size: 14px;
     color: black;
-
 }
+
 .navbar ul li{
     color: rgb(0, 0, 0);
     font-weight: bold;
+}
+header .clo-ico{
+    display: none;
+}
+header .resp-ico{
+    display: none;
 }
 .home .home-text{
     width: 50%;
@@ -366,6 +377,9 @@ tr td:first-child{
 
 
 
+
+
+
 @media screen and (max-width :1182px){
     .container-menu{
         flex-direction: column;
@@ -432,8 +446,29 @@ tr td:first-child{
         width: 80%;
      }
 }
-
 @media screen and (max-width :900px){
+    header ul li{
+        display: none;
+    }
+    header .resp-ico{
+        display: block;
+        padding-right: 30px;
+       font-size: 50px;
+       cursor: pointer;
+    }
+    .background{
+        background-image: url("/img/BG2.png"); 
+    }
+    .home-text h1{
+        font-size: 60px;
+    }
+    .home-text p{
+        font-weight: bold;
+    }
+
+    
+}
+@media screen and (max-width :800px){
     .about-content{
         display: block;
     }
@@ -461,6 +496,10 @@ tr td:first-child{
     .copyright{
         font-size: 70%;
     }   
+
+    .NAVBAR li{
+        display: none;
+    }
 }
 
 @media screen and (max-width :500px){
@@ -477,5 +516,8 @@ tr td:first-child{
     .information{
         font-size: 14px;
     }
-
+   
+    
 }
+
+
