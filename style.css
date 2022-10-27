@@ -238,7 +238,7 @@ header a {
     text-align: center;
     margin-top: 150px;
     margin-bottom: 50px;
-    /* font-size: 30px; */
+
  }
  .form-container{
     width: 80%;
@@ -315,8 +315,10 @@ tr td:first-child{
 
 
 .all-menu{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, auto));
+    text-align: center;
+    gap: 20px
 }
 .Menu{
     width: 100%;
@@ -332,8 +334,8 @@ tr td:first-child{
     justify-content: space-around;
 }
 .Menu .menu-select button{
-    width: 15%;
-    margin-bottom: 120px;
+    width: 150px;
+    margin-bottom: 50px;
     margin-right: 60px;
     margin-left: 60px;
     height: 50px;
@@ -343,10 +345,7 @@ tr td:first-child{
     color: black;
     font-weight: bold;
 }
-.all-menu{
-    justify-content: space-around;
-    margin-bottom: 100px;
-}
+
 .men-content h3{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -361,11 +360,12 @@ tr td:first-child{
     border : 10px;
     background-color: #92DBAD;
     font-size: 10px;
+    margin-bottom: 50px;
 }
 
 
 
-/*RESPO */
+
 @media screen and (max-width :1182px){
     .container-menu{
         flex-direction: column;
@@ -394,6 +394,16 @@ tr td:first-child{
         order: 1;
     }
 }
+
+
+@media screen and (max-width :1231px){
+    .Menu .menu-select {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media screen and (max-width :920px){
     .input-row{
         width: 100%;
@@ -436,7 +446,6 @@ tr td:first-child{
 }
 
 
-
 @media screen and (max-width :700px){
   
     .footer .content-footer {
@@ -468,5 +477,5 @@ tr td:first-child{
     .information{
         font-size: 14px;
     }
-    
+
 }
