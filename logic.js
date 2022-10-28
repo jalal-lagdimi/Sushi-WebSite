@@ -80,9 +80,25 @@
     const order_btn = document.querySelectorAll(".order");
     const orderNum =document.querySelector(".orderNum");
     let count =0;
-        order_btn.forEach((element)=>{
+
+    let foodorder = [];
+    const foodname = document.querySelectorAll(".food-name")
+
+        order_btn.forEach((element,foodname)=>{
             element.addEventListener("click",()=>{
                 count++;
                 orderNum.innerText = count;
             }) 
+            console.log(element.parentElement.childNodes[3].childNodes[0].nodeValue, foodname);
         })
+
+
+    const btn_cart = document.querySelector(".cart");
+    const btn_panier = document.querySelector(".panier")
+    btn_cart.addEventListener("click",()=>{
+        btn_panier.classList.toggle("tgl")
+    })
+
+
+
+    
