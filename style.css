@@ -325,6 +325,7 @@ tr td:first-child{
 
 
 
+
 .all-menu{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, auto));
@@ -352,11 +353,13 @@ tr td:first-child{
     height: 50px;
     border-radius: 10px;
     border: none;
-    background-color: #92DBAD;
     color: black;
     font-weight: bold;
+    cursor: pointer;
 }
-
+.active{
+    background-color: #16b151;
+}
 .men-content h3{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -373,6 +376,7 @@ tr td:first-child{
     font-size: 10px;
     margin-bottom: 50px;
 }
+
 
 
 
