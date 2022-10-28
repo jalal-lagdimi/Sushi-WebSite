@@ -447,14 +447,12 @@ tr td:first-child{
      }
 }
 @media screen and (max-width :900px){
-    header ul li{
-        display: none;
-    }
+   
     header .resp-ico{
         display: block;
         padding-right: 30px;
        font-size: 50px;
-       cursor: pointer;
+       cursor: pointer; 
     }
     .background{
         background-image: url("/img/BG2.png"); 
@@ -465,6 +463,30 @@ tr td:first-child{
     .home-text p{
         font-weight: bold;
     }
+    .NAVBAR {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0; 
+        background: #92DBAD;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        right: -100%;   
+    }
+    .NAVBAR .clo-ico{
+        display: block;
+        color: #ffffff;
+        position: absolute;
+        right: 10px;
+        font-size: 40px;
+        top: 10px;
+        cursor: pointer;
+    }
+    .NAVBAR a{
+        color: #ffffff;
+    }
+    
 
     
 }
@@ -472,12 +494,14 @@ tr td:first-child{
     .about-content{
         display: block;
     }
+   
     .about-box{
         width: 100%; 
         text-align: center;
         margin-bottom: 40px;
+        border-radius: 10px;
     }
-
+   
 }
 
 
@@ -497,9 +521,7 @@ tr td:first-child{
         font-size: 70%;
     }   
 
-    .NAVBAR li{
-        display: none;
-    }
+   
 }
 
 @media screen and (max-width :500px){
