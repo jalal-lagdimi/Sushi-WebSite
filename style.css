@@ -40,24 +40,60 @@ html,body{
  
 }
 .panier{
-    margin-top: 100px;
-    margin-left: 80%;
-    height: 60vh;
-    background-color: #16b151;
+    position: fixed;
+    text-align: center;
+    height: 80vh;
+    width: 30%;
+    margin-top: -120px;
+    margin-left: 79%;
+    background-color: #72f1a3;
     border-radius: 20px;
     margin-right: 40px;
     display: none;
+    overflow-y: scroll;
 }
 .tgl{
     display: block;
 }
 
-.panier h5{
-    display: block;
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 10px;
+.panier-row{
+    display: flex;
 }
+.panier-row img{
+    width: 45px;
+    height: 55px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.panier-row h5{
+    margin-top: 35px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system;
+    font-size: 15px;
+}
+.panier-row p{
+    margin-top: 34px;
+    margin-left: 25px;
+    font-family: system-ui, -apple-system;
+    font-weight: bold;
+}
+.somme-row{
+    display: flex;
+    margin-top: 450px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.somme-row button{
+    margin-left: 110px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: none;
+    width: 80px;
+    border-radius: 10px;
+}
+
+
 
 header{
     position: fixed;

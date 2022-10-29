@@ -9,6 +9,9 @@
         ulc.style.right = "-100%"; 
     })
 
+
+
+
     const allmenu =document.getElementById("categorie-all");
     const dishes =document.getElementById("catgorie-dishes");
     const drinks =document.getElementById("catgorie-drinks");
@@ -77,26 +80,48 @@
     }
     )
 
+
+
+
+
+
     const order_btn = document.querySelectorAll(".order");
     const orderNum =document.querySelector(".orderNum");
     let count =0;
+    // const foodname = document.querySelectorAll(".food-name")
 
-    let foodorder = [];
-    const foodname = document.querySelectorAll(".food-name")
-
-        order_btn.forEach((element,foodname)=>{
+   
+        order_btn.forEach((element)=>{
             element.addEventListener("click",()=>{
                 count++;
                 orderNum.innerText = count;
+
+                // console.log(element.parentElement.childNodes[3].childNodes[0].nodeValue, foodname);
+                // console.log(element.parentElement.childNodes[1].src);
+                let temp = element.parentElement.childNodes[5].innerText;
+                const DIV =document.createElement("div")
+                DIV.classList.add("panier-row")
+                DIV.innerHTML = `
+                <div class="panier-row">
+                    <img src="${element.parentElement.childNodes[1].src}" alt="menu image">
+                    <h5>${element.parentElement.childNodes[3].childNodes[0].nodeValue}</h5>
+                    <P>${Number.parseInt(temp.substring(temp.length-3,temp.length-1))}$</P>
+                </div>  `
+                // console.log(DIV);
+                panier.appendChild(DIV)
+           
+            // console.log(Number.parseInt(temp.substring(temp.length-3,temp.length-1)))
+
             }) 
-            console.log(element.parentElement.childNodes[3].childNodes[0].nodeValue, foodname);
+         
+
         })
 
 
     const btn_cart = document.querySelector(".cart");
-    const btn_panier = document.querySelector(".panier")
+    const panier = document.querySelector(".panier")
     btn_cart.addEventListener("click",()=>{
-        btn_panier.classList.toggle("tgl")
+        panier.classList.toggle("tgl")
     })
 
 
