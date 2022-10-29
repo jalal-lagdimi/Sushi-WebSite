@@ -106,9 +106,12 @@
                     <img src="${element.parentElement.childNodes[1].src}" alt="menu image">
                     <h5>${element.parentElement.childNodes[3].childNodes[0].nodeValue}</h5>
                     <P>${Number.parseInt(temp.substring(temp.length-3,temp.length-1))}$</P>
-                </div>  `
-                // console.log(DIV);
+                </div> 
+                `
+
+                console.log(DIV);
                 panier.appendChild(DIV)
+                console.log(panier);
            
             // console.log(Number.parseInt(temp.substring(temp.length-3,temp.length-1)))
 

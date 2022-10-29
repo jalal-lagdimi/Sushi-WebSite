@@ -43,9 +43,9 @@ html,body{
     position: fixed;
     text-align: center;
     height: 80vh;
-    width: 30%;
+    width: 25%;
     margin-top: -120px;
-    margin-left: 79%;
+    margin-left: 80%;
     background-color: #72f1a3;
     border-radius: 20px;
     margin-right: 40px;
@@ -79,19 +79,36 @@ html,body{
     font-weight: bold;
 }
 .somme-row{
+    height: 30px;
+    width: 300px;
     display: flex;
-    margin-top: 450px;
-    margin-left: 15px;
+    margin-bottom: 60px;
+    position: fixed;
+    bottom: -10px;
     font-weight: bold;
+    right: 78px;
+    font-weight: bold;
+    background-color: #03c952;
+    border-radius: 5px;
 }
 .somme-row button{
-    margin-left: 110px;
-    font-weight: bold;
-    background-color: #ffffff;
-    border: none;
     width: 80px;
+    height: 20px;
+    right: 145px;
+    position: fixed;
+    margin-top: 5px;
+    background-color: #ffffff;
     border-radius: 10px;
+    border: none;
+    font-weight: bold;
 }
+.somme-row p{
+    position: fixed;
+    left: 72%;
+    margin-top: 5px;
+}
+
+
 
 
 
