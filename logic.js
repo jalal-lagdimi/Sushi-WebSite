@@ -1,17 +1,19 @@
-    const openbtn = document.querySelector(".resp-ico");
+   // NAV BAR MOBIL
+   const openbtn = document.querySelector(".resp-ico"); 
     const closebtn = document.querySelector(".clo-ico");
-    const ulc = document.querySelector('.NAVBAR');
+    const navbarmobil = document.querySelector('.NAVBAR');
 
     openbtn.addEventListener("click",()=>{
-        ulc.style.right = "0"; 
+        navbarmobil.style.right = "0"; 
     })
     closebtn.addEventListener("click",()=>{
-        ulc.style.right = "-100%"; 
+        navbarmobil.style.right = "-100%"; 
     })
 
 
 
-
+    // CHANGE COLOR WHEN SELECT A TYPE 
+    // SELECT TYPE BY CLICK
     const allmenu =document.getElementById("categorie-all");
     const dishes =document.getElementById("catgorie-dishes");
     const drinks =document.getElementById("catgorie-drinks");
@@ -84,49 +86,59 @@
 
 
 
-
+    //ADD ELEMENT TO PANIER AND CALCUL TOTAL PRICE
     const order_btn = document.querySelectorAll(".order");
     const orderNum =document.querySelector(".orderNum");
     let count =0;
-    // const foodname = document.querySelectorAll(".food-name")
-
-   
         order_btn.forEach((element)=>{
             element.addEventListener("click",()=>{
                 count++;
-                orderNum.innerText = count;
-
-                // console.log(element.parentElement.childNodes[3].childNodes[0].nodeValue, foodname);
-                // console.log(element.parentElement.childNodes[1].src);
+                orderNum.innerText = count; 
+                
                 let temp = element.parentElement.childNodes[5].innerText;
                 const DIV =document.createElement("div")
                 DIV.classList.add("panier-row")
-                DIV.innerHTML = `
-                <div class="panier-row">
+                DIV.innerHTML = `            
                     <img src="${element.parentElement.childNodes[1].src}" alt="menu image">
                     <h5>${element.parentElement.childNodes[3].childNodes[0].nodeValue}</h5>
-                    <P>${Number.parseInt(temp.substring(temp.length-3,temp.length-1))}$</P>
-                </div> 
-                `
-
-                console.log(DIV);
+                    <P>${Number.parseInt(temp.substring(temp.length-3,temp.length-1))}$</P>  
+                ` 
                 panier.appendChild(DIV)
-                console.log(panier);
-           
-            // console.log(Number.parseInt(temp.substring(temp.length-3,temp.length-1)))
 
+                const total_price = document.querySelector('.total')
+                let total = parseInt(total_price.innerText)
+                
+                let priceItem = Number.parseInt(temp.substring(temp.length-3,temp.length-1))
+                total += priceItem
+                total_price.innerText = total + '$'
+
+              
+
+                
             }) 
-         
 
         })
 
+            // SHOW AND REMOV TH CARD
+            const btn_cart = document.querySelector(".cart");
+            const panier = document.querySelector(".panier")
+            
+            btn_cart.addEventListener("click",()=>{
+                panier.classList.toggle("tgl")
+            })
 
-    const btn_cart = document.querySelector(".cart");
-    const panier = document.querySelector(".panier")
-    btn_cart.addEventListener("click",()=>{
-        panier.classList.toggle("tgl")
-    })
+          // ORDER COMPLETED SUCCESFULY
+          const order_final = document.querySelector(".order-final")
+          order_final.addEventListener("click",()=>{
+              alert("YOUR ORDER COMPLETED SUCCESFULY")
+              orderNum.innerText = 0
+              panier.remove()
+          })
 
 
 
     
+
+
+        
+

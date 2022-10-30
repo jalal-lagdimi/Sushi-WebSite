@@ -43,9 +43,9 @@ html,body{
     position: fixed;
     text-align: center;
     height: 80vh;
-    width: 25%;
+    width: 21%;
     margin-top: -120px;
-    margin-left: 80%;
+    margin-left: 78%;
     background-color: #72f1a3;
     border-radius: 20px;
     margin-right: 40px;
@@ -71,41 +71,53 @@ html,body{
     font-weight: bold;
     font-family: system-ui, -apple-system;
     font-size: 15px;
+    color: #565c56;
 }
 .panier-row p{
     margin-top: 34px;
     margin-left: 25px;
     font-family: system-ui, -apple-system;
     font-weight: bold;
+   
 }
 .somme-row{
     height: 30px;
-    width: 300px;
+    width: 270px;
     display: flex;
     margin-bottom: 60px;
     position: fixed;
     bottom: -10px;
     font-weight: bold;
-    right: 78px;
+    right: 28px;
     font-weight: bold;
-    background-color: #03c952;
+    background-color: #16b151;
     border-radius: 5px;
 }
 .somme-row button{
     width: 80px;
-    height: 20px;
-    right: 145px;
+    height: 19px;
+    right: 55px;
     position: fixed;
     margin-top: 5px;
     background-color: #ffffff;
-    border-radius: 10px;
+    text-align: center;
+    border-radius: 8px;
     border: none;
     font-weight: bold;
+    cursor: pointer;
 }
 .somme-row p{
     position: fixed;
-    left: 72%;
+    margin-left: 15px;
     margin-top: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.somme-row span{
+    margin-left: 75px;
+    font-family: system-ui, -apple-system; ;
+    margin-top: 3px;
+    color: #ffffff;
 }
 
 
