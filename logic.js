@@ -104,7 +104,7 @@
                     <img src="${element.parentElement.childNodes[1].src}" alt="menu image">
                     <h5>${element.parentElement.childNodes[3].childNodes[0].nodeValue}</h5>
                     <P>${Number.parseInt(temp.substring(temp.length-3,temp.length-1))}$</P> 
-                    <button class="remove-btn"><i class="bi bi-trash3-fill"></i></button>   
+                
                     
                 ` 
               
@@ -118,13 +118,13 @@
                 let priceItem = Number.parseInt(temp.substring(temp.length-3,temp.length-1))
                 total += priceItem
                 total_price.innerText = total + '$'
-                // REMOVR ELEMENT 
-               const remove = document.querySelectorAll(".remove-btn")
-               remove.forEach((element)=>{
-                element.addEventListener("click",()=>{
-                    element.parentNode.remove()
-                })
-               })
+            //     // REMOVR ELEMENT 
+            //    const remove = document.querySelectorAll(".remove-btn")
+            //    remove.forEach((element)=>{
+            //     element.addEventListener("click",()=>{
+            //         element.parentNode.remove()
+            //     })
+            //    })
                 
 
             })           

@@ -73,7 +73,7 @@ html,body{
 }
 .panier-row h5{
     margin-top: 35px;
-    margin-left: 10px;
+    margin-left: 30px;
     font-weight: bold;
     font-family: system-ui, -apple-system;
     font-size: 15px;
@@ -81,7 +81,7 @@ html,body{
 }
 .panier-row p{
     margin-top: 34px;
-    margin-left: 25px;
+    margin-left: 45px;
     font-family: system-ui, -apple-system;
     font-weight: bold;
    
@@ -126,12 +126,7 @@ html,body{
     bottom: 50px
     
 }
-.remove-btn{
-    width: 50px;
-    background-color: #72f1a3;
-    border: none;
-    cursor: pointer;
-}
+
 
 
 
