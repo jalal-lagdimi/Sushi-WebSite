@@ -1,5 +1,5 @@
-   // NAV BAR MOBIL
-   const openbtn = document.querySelector(".resp-ico"); 
+   // NAVBAR MOBIL
+    const openbtn = document.querySelector(".resp-ico"); 
     const closebtn = document.querySelector(".clo-ico");
     const navbarmobil = document.querySelector('.NAVBAR');
 
@@ -118,20 +118,12 @@
                 let priceItem = Number.parseInt(temp.substring(temp.length-3,temp.length-1))
                 total += priceItem
                 total_price.innerText = total + '$'
-            //     // REMOVR ELEMENT 
-            //    const remove = document.querySelectorAll(".remove-btn")
-            //    remove.forEach((element)=>{
-            //     element.addEventListener("click",()=>{
-            //         element.parentNode.remove()
-            //     })
-            //    })
-                
-
+        
             })           
 
         })
 
-            // SHOW AND REMOV TH CARD
+            // SHOW THE CARD
             const btn_cart = document.querySelector(".cart");
             const panier = document.querySelector(".panier")
             
