@@ -19,7 +19,7 @@ html,body{
 }
 .background{
     height: 100vh;
-    background-image: url("/img/BG.jpg");
+    background-image: url("./img/BG.jpg");
     background-size: cover;
 }
 
@@ -134,7 +134,7 @@ html,body{
 
 
 
-    /* ABOUT HEADE */
+    /* ABOUT HEADER */
 header{
     position: fixed;
     float: right;
@@ -329,7 +329,7 @@ header .resp-ico{
 .about-title{
     width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
 }
 .about-box{
     width: 50%; 
@@ -355,6 +355,7 @@ header .resp-ico{
     text-align: center;
     margin-top: 150px;
     margin-bottom: 50px;
+    font-size: 30px;
 
  }
  .form-container{
