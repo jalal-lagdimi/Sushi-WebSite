@@ -47,7 +47,7 @@ html,body{
 }
 .panier{
     text-align: center;
-    height: 490px;
+    height: 542px;
     width: 317px;
     right: -50px;
     margin-top: -120px;
@@ -123,10 +123,9 @@ html,body{
     height: 20px;
     background-color: #ffffff;
     right: 30px;
-    bottom: 50px
-    
+    bottom: 50px;
+    cursor: pointer;
 }
-
 
 
 
@@ -196,15 +195,22 @@ header .resp-ico{
     width: 171px;
     height: 46px;
     margin-top: 20px;
+    text-align: center;
     background-color: #EEFF83;
     border: none;
     border-radius: 10px; 
+    transition: 1.9s; 
+}
+.home-text button:hover{
+    transform: scale(1.1,1.2);
 }
 .home-text button p{
-   font-size: 15px;
-   text-align: center;
-   margin-top: -1px;
-}
+    font-size: 15px;
+    text-align: center;
+    margin-top: -2px;
+    color: #000000;
+    font-weight: bold;
+ }
 
 .container-menu{
     display: flex;
@@ -220,26 +226,36 @@ header .resp-ico{
 } 
 .container-img img{
     border-radius: 10px;
-    margin-left: 50px;  
+    margin-left: 50px;
+    box-shadow: 5px 10px 18px rgb(212, 212, 212);
 }
+
 .container-text h2{
     font-size: 45px;
 }
 .container-text p{
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 32px;
 }
 .container-text button{
     width: 171px;
     height: 46px;
     margin-top: 32px;
+    padding-top: 3px;
     border-radius: 10px;
     border: none;
     background-color: #AADCE6;
+    color: #000000;
+    transition: 1.9s;
+}
+.container-text button:hover{
+    transform: scale(1.1,1.2);
 }
 .container-text button p{
     margin-top: -4px;
     font-size: 15px;
+    color: #000000;
+    font-weight: bold;
 }
 
 
@@ -465,6 +481,10 @@ tr td:first-child{
     color: black;
     font-weight: bold;
     cursor: pointer;
+    transition: 1.9s;
+}
+.Menu .menu-select button:hover{
+    transform: scale(1.1,1.2);
 }
 .active{
     background-color: #16b151;
@@ -487,9 +507,12 @@ tr td:first-child{
     color: #000000;
     font-weight: bold;
     cursor: pointer;
+    transition: 1.9s;
 }
-
-
+.men-content button:hover{
+    transform: scale(1.1,1.2);
+    background-color: #10d85d;
+}
 
 
 
