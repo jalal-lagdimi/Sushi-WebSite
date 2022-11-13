@@ -103,7 +103,7 @@
                 DIV.innerHTML = `            
                     <img src="${element.parentElement.childNodes[1].src}" alt="menu image">
                     <h5>${element.parentElement.childNodes[3].childNodes[0].nodeValue}</h5>
-                    <P>${Number.parseInt(temp.substring(temp.length-3,temp.length-1))}$</P>                   
+                    <P>${Number(temp.substring(temp.length-3,temp.length-1))}$</P>                   
                 ` 
               
                 panier.appendChild(DIV)
@@ -113,7 +113,7 @@
                 const total_price = document.querySelector('.total')
                 let total = parseInt(total_price.innerText)
                 
-                let priceItem = Number.parseInt(temp.slice(temp.length-3,temp.length-1))
+                let priceItem = Number(temp.slice(temp.length-3,temp.length-1))
                 total += priceItem
                 total_price.innerText = total + '$'
         
@@ -131,12 +131,11 @@
 
           // ORDER COMPLETED SUCCESFULY
           const order_final = document.querySelector(".order-final")
-          if(panier.childNodes.length!==0){
+
             order_final.addEventListener("click",()=>{
                 alert("Your order completed successfully")
                 location.reload()
             })
-          }
          
         
 
