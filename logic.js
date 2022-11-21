@@ -91,6 +91,7 @@
     const orderNum =document.querySelector(".orderNum");
     
     let count =0;
+    let total = 0;
 
         order_btn.forEach((element)=>{
             element.addEventListener("click",()=>{
@@ -107,13 +108,10 @@
                 ` 
               
                 panier.appendChild(DIV)
-               
-             
 
                 const total_price = document.querySelector('.total')
-                let total = parseInt(total_price.innerText)
                 
-                let priceItem = Number(temp.slice(temp.length-3,temp.length-1))
+                let priceItem = Number(temp.substring(temp.length-3,temp.length-1))
                 total += priceItem
                 total_price.innerText = total + '$'
         
