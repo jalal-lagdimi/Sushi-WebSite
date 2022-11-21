@@ -583,7 +583,7 @@ tr td:first-child{
        cursor: pointer; 
     }
     .background{
-        background-image: url("/img/BG2.png"); 
+        background-image: url("./img/BG2.png"); 
     }
     .home-text h1{
         font-size: 60px;
