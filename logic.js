@@ -131,8 +131,12 @@
           const order_final = document.querySelector(".order-final")
 
             order_final.addEventListener("click",()=>{
-                alert("Your order completed successfully")
-                location.reload()
+                alert("Your order completed successfully");
+                document.querySelector('.total').remove();
+                document.querySelector(".orderNum").remove();
+                document.querySelectorAll(".panier-row").forEach((elm)=>{
+                    elm.remove();
+                })
             })
          
         
